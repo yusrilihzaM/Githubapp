@@ -2,18 +2,17 @@ package com.yusril.submission2_a3322966.activity.favorite
 
 import android.content.Intent
 import android.database.ContentObserver
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.yusril.submission2_a3322966.R
 import com.yusril.submission2_a3322966.adapter.FavoriteListAdapter
 import com.yusril.submission2_a3322966.databinding.ActivityFavoriteBinding
 import com.yusril.submission2_a3322966.db.DatabaseContract
-import com.yusril.submission2_a3322966.db.FavoriteHelper
 import com.yusril.submission2_a3322966.db.MappingHelper
 import com.yusril.submission2_a3322966.model.UserFavorite
 import kotlinx.coroutines.Dispatchers
@@ -61,8 +60,6 @@ class FavoriteActivity : AppCompatActivity() {
     private fun loadNotesAsync() {
         GlobalScope.launch(Dispatchers.Main) {
             binding.progressBar.visibility= View.VISIBLE
-            val favoriteHelper= FavoriteHelper.getInstance(applicationContext)
-            favoriteHelper.open()
             val defferedFavorite=async(Dispatchers.IO) {
                 val cursor = contentResolver.query(DatabaseContract.CONTENT_URI, null, null, null, null)
                 MappingHelper.mapCursorToArrayList(cursor)
@@ -77,8 +74,6 @@ class FavoriteActivity : AppCompatActivity() {
                 binding.tvMessage.text=getString(R.string.fav_none)
                 Toast.makeText(this@FavoriteActivity, getString(R.string.fav_none), Toast.LENGTH_SHORT).show()
             }
-            favoriteHelper.close()
-
             favoriteListAdapter.setOnItemClickCallback(object : FavoriteListAdapter.OnItemClickCallback{
                 override fun onItemClicked(data: UserFavorite) {
                     Toast.makeText(this@FavoriteActivity, data.username, Toast.LENGTH_SHORT).show()

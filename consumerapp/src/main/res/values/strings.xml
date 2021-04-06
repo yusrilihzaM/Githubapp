@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">ConsumerApp</string>
+    <string name="app_name">Consumer Github App</string>
+    <string name="icon_github">Icon Github</string>
+    <string name="github_app">Consumer Github App</string>
+    <string name="name_dummy" translatable="false">Moh Yusril Ihza Maulana</string>
+    <string name="image_backgound_detail">Image Backgound Detail</string>
+    <string name="dummy_location" translatable="false">Pasuruan</string>
+    <string name="repostory">Repostory</string>
+    <string name="dummy_repostory" translatable="false">80</string>
+    <string name="follower">Followers</string>
+    <string name="dummy_follower" translatable="false">0</string>
+    <string name="following">Following</string>
+    <string name="dummy_following" translatable="false">300</string>
+    <string name="dummy_company">Company</string>
+    <string name="settings">Settings</string>
+    <string name="ic_location">ic location</string>
+    <string name="ic_company">ic company</string>
+    <string name="change_language">Change Language</string>
+
+    <string-array name="data_settings">
+        <item>@string/change_language</item>
+    </string-array>
+    <string-array name="data_ic_settings">
+        <item>@drawable/ic_change</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ic_setting" translatable="false">ic setting</string>
+    <string name="favorites">Favorites</string>
+    <string name="fav_added">Favorite Added</string>
+    <string name="fav_deleted">Favorite Deleted</string>
+    <string name="fav_none">No Data</string>
 </resources>

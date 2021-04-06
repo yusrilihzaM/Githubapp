@@ -18,7 +18,7 @@
             android:enabled="true"
             android:exported="true"
             android:readPermission="com.yusril.submission2_a3322966.READ_DATABASE"
-            android:writePermission="ccom.yusril.submission2_a3322966.WRITE_DATABASE"/>
+            android:writePermission="com.yusril.submission2_a3322966.WRITE_DATABASE"/>
         <activity android:name=".activity.favorite.DetailFavoriteActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

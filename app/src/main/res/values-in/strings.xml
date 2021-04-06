@@ -3,9 +3,7 @@
     <string name="app_name">Aplikasi Github</string>
     <string name="icon_github">Ikon Github</string>
     <string name="github_app">Aplikasi Github</string>
-    <string name="dummy_username">Nama pengguna</string>
     <string name="image_backgound_detail">Detail Latar Belakang Gambar</string>
-    <string name="location">Lokasi:</string>
     <string name="repostory">Gudang</string>
     <string name="follower">Pengikut</string>
     <string name="following">Mengikuti</string>

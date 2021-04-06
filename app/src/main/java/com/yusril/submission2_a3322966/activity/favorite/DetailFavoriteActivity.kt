@@ -20,7 +20,6 @@ import com.yusril.submission2_a3322966.activity.detail.SectionsPagerAdapter
 import com.yusril.submission2_a3322966.databinding.ActivityDetailFavoriteBinding
 import com.yusril.submission2_a3322966.db.DatabaseContract
 import com.yusril.submission2_a3322966.db.DatabaseContract.CONTENT_URI
-import com.yusril.submission2_a3322966.db.FavoriteHelper
 import com.yusril.submission2_a3322966.model.UserFavorite
 import com.yusril.submission2_a3322966.viewModel.UserDetailMainModel
 
@@ -40,7 +39,6 @@ class DetailFavoriteActivity : AppCompatActivity() {
     var name :String?=""
     var username :String?=""
     private var userAvatar :String?=""
-    private lateinit var favoriteHelper: FavoriteHelper
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -116,8 +114,6 @@ class DetailFavoriteActivity : AppCompatActivity() {
         }.attach()//sisipkan
 
         // Favorite
-        favoriteHelper=FavoriteHelper.getInstance(applicationContext)
-        favoriteHelper.open()
         val values= ContentValues()
         values.put(DatabaseContract.FavoriteColumns.USERNAME,username)
         values.put(DatabaseContract.FavoriteColumns.URL_IMAGE,userAvatar)

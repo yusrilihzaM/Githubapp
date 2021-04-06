@@ -16,6 +16,17 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        each {
+            it.buildConfigField "String", "TOKEN", token
+            it.buildConfigField "String", "URL_USER", URL_USER
+            it.buildConfigField "String", "URL_SEARCH", URL_SEARCH
+            it.buildConfigField "String", "URL_USER_DETAIL", URL_USER_DETAIL
+            it.buildConfigField "String", "URL_USER_DETAIL_FOLLOWER", URL_USER_DETAIL_FOLLOWER
+            it.buildConfigField "String", "URL_USER_DETAIL_FOLLOWING", URL_USER_DETAIL_FOLLOWING
+            it.buildConfigField "String", "AUTORIZATION", AUTORIZATION
+            it.buildConfigField "String", "USERAGENT", USERAGENT
+            it.buildConfigField "String", "REQUEST", REQUEST
+        }
     }
 
     buildTypes {

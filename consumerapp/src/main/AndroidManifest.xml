@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yusril.consumerapp">
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.yusril.submission2_a3322966.READ_DATABASE" />
+    <uses-permission android:name="com.yusril.submission2_a3322966.WRITE_DATABASE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,12 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Submission2">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".activity.favorite.FavoriteActivity" >
+
+        </activity>
+        <activity android:name=".activity.favorite.DetailFavoriteActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yusril.consumerapp.activity.favorite.FavoriteActivity" />
+        </activity>
+        <activity android:name=".activity.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.SettingsActivity" />
     </application>
-
+    <queries>
+        <package android:name="com.yusril.submission2_a3322966" />
+    </queries>
 </manifest>
