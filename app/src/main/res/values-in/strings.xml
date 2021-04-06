@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Github</string>
+    <string name="icon_github">Ikon Github</string>
+    <string name="github_app">Aplikasi Github</string>
+    <string name="dummy_username">Nama pengguna</string>
+    <string name="image_backgound_detail">Detail Latar Belakang Gambar</string>
+    <string name="location">Lokasi:</string>
+    <string name="repostory">Gudang</string>
+    <string name="follower">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="dummy_company">Perusahaan</string>
+    <string name="share">Bagikan</string>
+    <string name="search">Cari</string>
+    <string name="settings">Pengaturan</string>
+    <string name="search_hint">Masukkan nama pengguna</string>
+    <string name="ic_location">lokasi ic</string>
+    <string name="ic_company">perusahaan ic</string>
+    <string name="change_language">Ganti Bahasa</string>
+</resources>
