@@ -13,12 +13,13 @@ import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.yusril.submission2_a3322966.R
-import com.yusril.submission2_a3322966.viewModel.MainViewModel
 import com.yusril.submission2_a3322966.activity.detail.DetailUserActivity
 import com.yusril.submission2_a3322966.activity.favorite.FavoriteActivity
+import com.yusril.submission2_a3322966.activity.settings.SettingsActivity
 import com.yusril.submission2_a3322966.adapter.UserListAdapter
 import com.yusril.submission2_a3322966.databinding.ActivityMainBinding
 import com.yusril.submission2_a3322966.model.User
+import com.yusril.submission2_a3322966.viewModel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var userListAdapter: UserListAdapter

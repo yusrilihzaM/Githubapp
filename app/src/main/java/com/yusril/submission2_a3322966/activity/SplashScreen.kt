@@ -7,15 +7,17 @@ import android.os.Handler
 import android.os.Looper
 import com.bumptech.glide.Glide
 import com.yusril.submission2_a3322966.R
-import com.yusril.submission2_a3322966.databinding.ActivityDetailUserBinding
 import com.yusril.submission2_a3322966.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : Activity() {
     private lateinit var binding: ActivitySplashScreenBinding
+    companion object{
+        const val TIME:Long=3000
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        Handler(Looper.getMainLooper()).postDelayed({ moveActivity() },3000)
+        Handler(Looper.getMainLooper()).postDelayed({ moveActivity() },TIME)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

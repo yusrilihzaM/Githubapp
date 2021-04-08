@@ -11,11 +11,14 @@ import com.yusril.consumerapp.activity.favorite.FavoriteActivity
 import com.yusril.consumerapp.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : Activity() {
+    companion object{
+        const val TIME:Long=3000
+    }
     private lateinit var binding: ActivitySplashScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        Handler(Looper.getMainLooper()).postDelayed({ moveActivity() },3000)
+        Handler(Looper.getMainLooper()).postDelayed({ moveActivity() },TIME)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

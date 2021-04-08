@@ -31,22 +31,13 @@ class FollowerFragment : Fragment() {
     companion object {
         var DATA_USERNAME = "data_username"
         // cara newInstance #1 sesuai standart otomatis digenerate oleh android studio
-        // default newInstance dr android stuido
         @JvmStatic
         fun newInstance(username:String?)=  FollowerFragment().apply {
             arguments = Bundle().apply {
                 putString(DATA_USERNAME, username)
             }
         }
-        //
-        // cara newInstance 2 dari video intruksi dicoding
-//        fun newInstance(username:String):FollowerFragment {
-//            val fragment=FollowerFragment()
-//            val bundle=Bundle()
-//            bundle.putString(ARG_USERNAME,username)
-//            fragment.arguments=bundle
-//            return fragment
-//        }
+
 
     }
     // jika memakai cara dr video intruksi dicoding onCreate ini tidak usah dipakai

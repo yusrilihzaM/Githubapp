@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+    <PreferenceCategory
+        android:key="notifications_category"
+        android:title="@string/notification"
+        android:layout="@layout/setting_preference_text_view">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_baseline_access_alarm_24"
+            android:key="key_alarm"
+            android:title="@string/alarm_ket" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="Settings_app_category"
+        android:title="@string/settings_app"
+        android:layout="@layout/setting_preference_text_view"
+       >
+
+        <Preference
+            android:icon="@drawable/ic_baseline_language_24"
+            android:key="key_localization"
+            android:summary="Change app language"
+            android:title="@string/change_language" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

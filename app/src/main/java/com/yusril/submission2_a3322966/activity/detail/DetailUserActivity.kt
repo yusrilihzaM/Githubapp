@@ -176,7 +176,6 @@ class DetailUserActivity : AppCompatActivity() {
                 binding.btnLove.isLiked = false
                 Log.d("check<0", check.size.toString())
             }
-            //jika saya close akan forceclose activitynya
         }
     }
 }

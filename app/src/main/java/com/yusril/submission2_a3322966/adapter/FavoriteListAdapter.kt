@@ -2,15 +2,11 @@ package com.yusril.submission2_a3322966.adapter
 
 import android.app.Activity
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.yusril.submission2_a3322966.R
 import com.yusril.submission2_a3322966.databinding.ItemUserFavoriteBinding
-import com.yusril.submission2_a3322966.databinding.ItemUserMainBinding
-import com.yusril.submission2_a3322966.model.User
 import com.yusril.submission2_a3322966.model.UserFavorite
 
 class FavoriteListAdapter(private val activity: Activity): RecyclerView.Adapter<FavoriteListAdapter.FavorieViewHolder>() {
@@ -22,19 +18,7 @@ class FavoriteListAdapter(private val activity: Activity): RecyclerView.Adapter<
             this.listFavorites.addAll(listNotes)
             notifyDataSetChanged()
         }
-    fun addItem(userFavorite: UserFavorite) {
-        this.listFavorites.add(userFavorite)
-        notifyItemInserted(this.listFavorites.size - 1)
-    }
-    fun updateItem(position: Int, userFavorite: UserFavorite) {
-        this.listFavorites[position] = userFavorite
-        notifyItemChanged(position, userFavorite)
-    }
-    fun removeItem(position: Int) {
-        this.listFavorites.removeAt(position)
-        notifyItemRemoved(position)
-        notifyItemRangeChanged(position, this.listFavorites.size)
-    }
+
     inner class FavorieViewHolder(private val binding: ItemUserFavoriteBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(userFavorite: UserFavorite){
             binding.tvUsername.text=userFavorite.username

@@ -33,4 +33,13 @@
     <string name="fav_added">Favorite Added</string>
     <string name="fav_deleted">Favorite Deleted</string>
     <string name="fav_none">No Data</string>
+
+
+
+    <string name="alaram">Alarm</string>
+    <string name="alarm_ket">Enable alarm notifications</string>
+    <string name="settings_app">Settings App</string>
+    <string name="notification">Notifications</string>
+    <string name="alarm_activated">Alarm activated</string>
+    <string name="alarm_deactivated">Alarm is disabled</string>
 </resources>
